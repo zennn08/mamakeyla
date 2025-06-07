@@ -174,15 +174,22 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
+            background:
                 radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
             animation: float 20s ease-in-out infinite;
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(1deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(1deg);
+            }
         }
 
         .hero-content {
@@ -194,8 +201,15 @@
         }
 
         @keyframes heroFadeIn {
-            0% { opacity: 0; transform: translateY(30px); }
-            100% { opacity: 1; transform: translateY(0); }
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero h1 {
@@ -357,8 +371,13 @@
             opacity: 1;
         }
 
-        .about-prev { left: 10px; }
-        .about-next { right: 10px; }
+        .about-prev {
+            left: 10px;
+        }
+
+        .about-next {
+            right: 10px;
+        }
 
         .about-dots {
             position: absolute;
@@ -465,8 +484,13 @@
             opacity: 1;
         }
 
-        .product-prev { left: 8px; }
-        .product-next { right: 8px; }
+        .product-prev {
+            left: 8px;
+        }
+
+        .product-next {
+            right: 8px;
+        }
 
         .product-dots {
             position: absolute;
@@ -825,11 +849,11 @@
             .hero h1 {
                 font-size: clamp(2.2rem, 8vw, 3.8rem);
             }
-            
+
             .hero p {
                 font-size: clamp(1.1rem, 4vw, 1.3rem);
             }
-            
+
             .about-slider {
                 height: 300px;
             }
@@ -840,15 +864,15 @@
             nav {
                 padding: 1rem 5%;
             }
-            
+
             section {
                 padding: 5rem 5%;
             }
-            
+
             .product-slider {
                 height: 220px;
             }
-            
+
             .about-slider {
                 height: 320px;
             }
@@ -860,27 +884,27 @@
                 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
                 gap: 2.5rem;
             }
-            
+
             .contact-content {
                 flex-direction: row;
                 gap: 4rem;
             }
-            
+
             .contact-info,
             .contact-form {
                 flex: 1;
             }
-            
+
             .about-content {
                 flex-direction: row;
                 gap: 4rem;
             }
-            
+
             .about-text {
                 order: 1;
                 flex: 1;
             }
-            
+
             .about-image {
                 order: 2;
                 flex: 0 0 300px;
@@ -892,55 +916,55 @@
             .nav-links {
                 display: flex;
             }
-            
+
             nav {
                 padding: 1.2rem 6%;
                 height: 70px;
             }
-            
+
             .logo {
                 font-size: 1.6rem;
             }
-            
+
             .theme-toggle {
                 width: 45px;
                 height: 45px;
                 font-size: 1.2rem;
             }
-            
+
             .hero {
                 padding: 100px 6% 60px;
             }
-            
+
             section {
                 padding: 6rem 6%;
             }
-            
+
             .section-title {
                 margin-bottom: 4rem;
             }
-            
+
             .section-title::after {
                 width: 100px;
                 height: 4px;
             }
-            
+
             .product-slider {
                 height: 250px;
             }
-            
+
             .about-slider {
                 height: 400px;
             }
-            
+
             .about-image {
                 flex: 0 0 400px;
             }
-            
+
             .product-info {
                 padding: 2rem;
             }
-            
+
             .contact-form {
                 padding: 2.5rem;
             }
@@ -952,23 +976,23 @@
                 grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
                 gap: 3rem;
             }
-            
+
             .about-content {
                 gap: 5rem;
             }
-            
+
             .about-image {
                 flex: 0 0 450px;
             }
-            
+
             .about-slider {
                 height: 450px;
             }
-            
+
             .product-slider {
                 height: 280px;
             }
-            
+
             .product-card {
                 min-height: 600px;
             }
@@ -976,16 +1000,17 @@
 
         /* Desktop: 1200px and up */
         @media (min-width: 1200px) {
+
             nav,
             section {
                 max-width: 1400px;
                 margin: 0 auto;
             }
-            
+
             .products-grid {
                 grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
             }
-            
+
             .product-card {
                 min-height: 650px;
             }
@@ -998,10 +1023,21 @@
             animation: fadeInUp 0.6s ease forwards;
         }
 
-        .product-card:nth-child(1) { animation-delay: 0.1s; }
-        .product-card:nth-child(2) { animation-delay: 0.2s; }
-        .product-card:nth-child(3) { animation-delay: 0.3s; }
-        .product-card:nth-child(4) { animation-delay: 0.4s; }
+        .product-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .product-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .product-card:nth-child(3) {
+            animation-delay: 0.3s;
+        }
+
+        .product-card:nth-child(4) {
+            animation-delay: 0.4s;
+        }
 
         @keyframes fadeInUp {
             to {
@@ -1033,19 +1069,20 @@
         }
 
         @media (hover: none) and (pointer: coarse) {
+
             /* Touch device specific styles */
             .product-card:hover,
             .contact-item:hover {
                 transform: none;
             }
-            
+
             .cta-button:hover,
             .product-button:hover,
             .submit-btn:hover,
             .social-links a:hover {
                 transform: none;
             }
-            
+
             .about-nav,
             .product-nav {
                 opacity: 1;
@@ -1053,7 +1090,8 @@
         }
 
         /* High DPI displays */
-        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        @media (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) {
             .hero::before {
                 background-size: 50% 50%;
             }
@@ -1065,22 +1103,22 @@
                 min-height: 100vh;
                 padding: 80px 4% 20px;
             }
-            
+
             .hero h1 {
                 font-size: clamp(1.8rem, 6vw, 3rem);
                 margin-bottom: 1rem;
             }
-            
+
             .hero p {
                 font-size: clamp(0.9rem, 3vw, 1.1rem);
                 margin-bottom: 1.5rem;
             }
-            
+
             .cta-button {
                 padding: 1rem 2rem;
                 font-size: 0.9rem;
             }
-            
+
             section {
                 padding: 3rem 4%;
             }
@@ -1100,6 +1138,7 @@
 
         /* Reduced motion for accessibility */
         @media (prefers-reduced-motion: reduce) {
+
             *,
             *::before,
             *::after {
@@ -1107,7 +1146,7 @@
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
             }
-            
+
             .hero::before {
                 animation: none;
             }
@@ -1115,6 +1154,7 @@
 
         /* High contrast mode */
         @media (prefers-contrast: high) {
+
             .product-card,
             .contact-item,
             .contact-form,
@@ -1122,7 +1162,7 @@
                 border-width: 2px;
                 border-color: var(--primary-blue);
             }
-            
+
             .nav-links a::after {
                 height: 4px;
             }
@@ -1130,6 +1170,7 @@
 
         /* Print styles */
         @media print {
+
             *,
             *::before,
             *::after {
@@ -1137,7 +1178,7 @@
                 color: black !important;
                 box-shadow: none !important;
             }
-            
+
             header,
             .theme-toggle,
             .about-nav,
@@ -1146,13 +1187,13 @@
             .product-dots {
                 display: none !important;
             }
-            
+
             .hero {
                 background: white !important;
                 color: black !important;
                 padding: 2rem 0;
             }
-            
+
             section {
                 padding: 2rem 0;
                 page-break-inside: avoid;
@@ -1192,17 +1233,17 @@
                 padding-left: max(0px, env(safe-area-inset-left));
                 padding-right: max(0px, env(safe-area-inset-right));
             }
-            
+
             .hero-content {
                 padding-left: max(1rem, env(safe-area-inset-left));
                 padding-right: max(1rem, env(safe-area-inset-right));
             }
-            
+
             section {
                 padding-left: max(4%, env(safe-area-inset-left));
                 padding-right: max(4%, env(safe-area-inset-right));
             }
-            
+
             footer {
                 padding-left: max(4%, env(safe-area-inset-left));
                 padding-right: max(4%, env(safe-area-inset-right));
@@ -1234,53 +1275,54 @@
                 font-size: clamp(1.8rem, 8vw, 2.5rem);
                 line-height: 1.1;
             }
-            
+
             .hero p {
                 font-size: clamp(0.95rem, 4vw, 1.1rem);
                 margin-bottom: 2rem;
             }
-            
+
             .cta-button {
                 padding: 1rem 2rem;
                 font-size: 0.9rem;
                 gap: 0.5rem;
             }
-            
+
             .section-title {
                 font-size: clamp(1.6rem, 7vw, 2.2rem);
                 margin-bottom: 2.5rem;
             }
-            
+
             .about-slider {
                 height: 250px;
             }
-            
+
             .product-slider {
                 height: 180px;
             }
-            
+
             .product-info {
                 padding: 1.2rem;
             }
-            
+
             .product-title {
                 font-size: 1.2rem;
             }
-            
+
             .product-price {
                 font-size: 1.3rem;
             }
-            
+
             .contact-form {
                 padding: 1.5rem;
             }
-            
+
             .form-group input,
             .form-group textarea {
                 padding: 0.8rem;
-                font-size: 16px; /* Prevents zoom on iOS */
+                font-size: 16px;
+                /* Prevents zoom on iOS */
             }
-            
+
             .social-links a {
                 width: 44px;
                 height: 44px;
@@ -1293,33 +1335,33 @@
             nav {
                 padding: 0.8rem 3%;
             }
-            
+
             .logo {
                 font-size: 1.2rem;
             }
-            
+
             .theme-toggle {
                 width: 36px;
                 height: 36px;
                 font-size: 1rem;
             }
-            
+
             section {
                 padding: 3rem 3%;
             }
-            
+
             .hero {
                 padding: 70px 3% 30px;
             }
-            
+
             .about-slider {
                 height: 220px;
             }
-            
+
             .product-slider {
                 height: 160px;
             }
-            
+
             .contact-form {
                 padding: 1.2rem;
             }
@@ -1556,7 +1598,7 @@
                     <i class="fas fa-phone"></i>
                     <div>
                         <h4>Telepon</h4>
-                        <p>+62 852-7205-9518</p>
+                        <p>+62 853-6459-6424</p>
                     </div>
                 </div>
                 <div class="contact-item">
@@ -1574,9 +1616,12 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/ferry.irwansyah.777?igsh=aW5memk1ZDVocHNr" title="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/ferry.irwansyah.777?igsh=aW5memk1ZDVocHNr" title="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/6285364596424?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20Anda"
+                        title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
             <form class="contact-form">
@@ -1776,7 +1821,7 @@
 
                 // WhatsApp message
                 const message = `Halo Mama Kayla, saya tertarik dengan produk ${productTitle} dengan harga ${productPrice}. Bisa tolong berikan informasi lebih lanjut?`;
-                const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
+                const whatsappUrl = `https://wa.me/6285364596424?text=${encodeURIComponent(message)}`;
 
                 window.open(whatsappUrl, '_blank');
             });
